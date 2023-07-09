@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Ім'я, Прізвище (Текстові поля) -->
+    <!-- Дата народження (Текстове поле) -->
+    <!-- Стать (radio) -->
+    <!-- Місто (select) -->
+    <!-- Адреса (textarea) -->
+    <!-- Мови, якими володіє (checkbox) -->
+    <!-- …. -->
+    <!-- Кнопка "Зберегти" -->
+    <form action="#" id="form">
+        <fieldset id="signup">
+            <legend><b>Personalia:</b></legend>
+            <label for="namePerson">First Name</label><br />
+                <input
+                type="text"
+                id="firstName"
+                name="fname"
+                required
+                /><br />
+            <label for="namePerson">Last Name</label><br />
+            <input
+                type="text"
+                id="lastName"
+                name="lname"
+                required
+            /><br />
+            <label for="namePerson bd" id="label">Birth date</label><br />
+            <input type="date" id="birthday" name="birthday" required /><br />
+
+            <label>Стать:</label><br />
+
+            <label for="L">Lady:</label><br />
+            <input type="radio" id="w" name="gender" value="Lady" /><br />
+
+            <label for="M">Man:</label><br />
+            <input type="radio" id="m" name="gender" value="Man" /><br />
+
+        <select name="City" id="city">
+            <option value="Kyiv">Kyiv</option>
+            <option value="Vinnitsa">Vinnitsa</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Odesa">Odesa</option></select
+        ><br>
+
+        <label for="adress">Adress:</label><br>
+        <textarea
+            name="adress"
+            id="adress"
+            cols="30"
+            rows="10"
+            width="200px"
+            heigth="150px"
+        ></textarea
+        ><br />
+        <label for="lang">Your Language:</label><br>
+        <input
+            type="checkbox"
+            id="ukr"
+            name="language"
+            value="ukr"
+        /><label for="ukr">ukr</label><br>
+        <input
+            type="checkbox"
+            id="eng"
+            name="language"
+            value="eng"
+        /><label for="eng">eng</label><br>
+        <input
+            type="checkbox"
+            id="fr"
+            name="language"
+            value="fr"
+        /><label for="fr">fr</label><br>
+        <hr />
+        <input type="button" value="submit" id="submit" onclick="myTable()">
+    </fieldset>
+    </form>
+    <table id="myTable">
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Birth date</th>
+            <th>gender</th>
+            <th>city</th>
+            <th>adress</th>
+            <th>language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>

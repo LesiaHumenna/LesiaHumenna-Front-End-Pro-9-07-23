@@ -1,0 +1,27 @@
+form{
+    background-color: #f4dada;
+    max-width: 550px;
+}
+#signup{
+    max-width: 550px;
+}
+input, textarea, label{
+    left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#city{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+table {
+    display: none;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(235, 178, 235);
+}
+table, td, th{
+    border: 1px solid black;
+}
